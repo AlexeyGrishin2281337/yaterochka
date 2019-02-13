@@ -119,9 +119,9 @@ namespace WindowsFormsApplication4
 
         private void MagazinForm_Resize(object sender, EventArgs e)
         {
-            productsPanel1.Height = this.Height - 89;
-            productsPanel2.Height = this.Height - 89;
-            productsPanel3.Height = this.Height - 89;
+            productsPanel1.Height = this.Height - 100;
+            productsPanel2.Height = this.Height - 100;
+            productsPanel3.Height = this.Height - 100;
 
             buttonDalshe1.Location = new Point(
                 productsPanel1.Width - buttonDalshe1.Size.Width, 
@@ -132,9 +132,6 @@ namespace WindowsFormsApplication4
             buttonNazad2.Location = new Point(
                 0,
                 productsPanel2.Height - buttonNazad2.Size.Height);
-            buttonNazad3.Location = new Point(
-                    0,
-                    productsPanel3.Height - buttonNazad3.Size.Height);
         }
     }
 }
