@@ -40,5 +40,16 @@ namespace WindowsFormsApplication4
             Skins mk = new Skins();
             mk.ShowDialog();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Ya_Terochka_Load(object sender, EventArgs e)
+        {
+            System.Drawing.Drawing2D.GraphicsPath gp2 = Terochka.BuildTransparencyPath(pictureBox1);
+            pictureBox1.Region = new Region(gp2);
+        }
     }
 }

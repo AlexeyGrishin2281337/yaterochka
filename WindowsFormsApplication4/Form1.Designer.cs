@@ -33,7 +33,10 @@
             this.Мой_кабинет = new System.Windows.Forms.Button();
             this.Скины = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Magazin
@@ -110,6 +113,25 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(572, 291);
             this.tableLayoutPanel1.TabIndex = 5;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApplication4.Properties.Resources.Salocoin;
+            this.pictureBox1.Location = new System.Drawing.Point(372, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(47, 46);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(426, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "салоcoin :";
             // 
             // Ya_Terochka
             // 
@@ -118,11 +140,16 @@
             this.BackgroundImage = global::WindowsFormsApplication4.Properties.Resources.ytrk_mini;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(572, 342);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Ya_Terochka";
             this.Text = "Ya_Terochka";
+            this.Load += new System.EventHandler(this.Ya_Terochka_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -133,6 +160,8 @@
         private System.Windows.Forms.Button Мой_кабинет;
         private System.Windows.Forms.Button Скины;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

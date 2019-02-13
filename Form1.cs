@@ -40,13 +40,5 @@ namespace WindowsFormsApplication4
             Skins mk = new Skins();
             mk.ShowDialog();
         }
-
-        private void Ya_Terochka_Load(object sender, EventArgs e)
-        {
-            tableLayoutPanel1.Location = new Point(
-                tableLayoutPanel1.Width - tableLayoutPanel1.Size.Width,
-                tableLayoutPanel1.Height - tableLayoutPanel1.Size.Height);
-        }
-}
-
     }
+}
