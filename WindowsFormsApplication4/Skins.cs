@@ -16,5 +16,17 @@ namespace WindowsFormsApplication4
         {
             InitializeComponent();
         }
+
+        private void Skins_Load(object sender, EventArgs e)
+        {
+
+            InitializeComponent();
+
+            System.Drawing.Drawing2D.GraphicsPath gp = Terochka.BuildTransparencyPath(pictureBox1);
+            pictureBox1.Region = new Region(gp);
+
+            System.Drawing.Drawing2D.GraphicsPath blueTerkaOblast = Terochka.BuildTransparencyPath(blueTerkaPictureBox);
+            blueTerkaPictureBox.Region = new Region(blueTerkaOblast);
+        }
     }
 }

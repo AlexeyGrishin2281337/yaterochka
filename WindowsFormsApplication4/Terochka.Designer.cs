@@ -84,6 +84,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(46, 47);
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // Terochka
             // 

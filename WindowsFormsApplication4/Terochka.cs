@@ -28,11 +28,15 @@ namespace WindowsFormsApplication4
         }
         public static System.Drawing.Drawing2D.GraphicsPath BuildTransparencyPath(PictureBox pb)
         {
+            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
             Image im = pb.Image;
             int x;
             int y;
+            if(pb.Image==null)
+            {
+                return gp;
+            }
             Bitmap bmp = new Bitmap(im);
-            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
             Color mask = bmp.GetPixel(0, 0);
 
             for (x = 0; x <= pb.Size.Width - 1; x++)
@@ -67,6 +71,11 @@ namespace WindowsFormsApplication4
         }
 
         private void Terochka_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }

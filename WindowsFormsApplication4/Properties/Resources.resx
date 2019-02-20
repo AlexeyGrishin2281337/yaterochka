@@ -130,4 +130,10 @@
   <data name="Salocoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Salocoin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TerSol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerSol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TerTer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerTer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -51,5 +51,10 @@ namespace WindowsFormsApplication4
             System.Drawing.Drawing2D.GraphicsPath gp2 = Terochka.BuildTransparencyPath(pictureBox1);
             pictureBox1.Region = new Region(gp2);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
