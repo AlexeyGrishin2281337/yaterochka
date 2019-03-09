@@ -12,10 +12,16 @@ namespace WindowsFormsApplication4
 {
     public partial class Terochka : Form
     {
+        int NachalTeret = 0;
         Random rnd = new Random();
         public Terochka()
         {
             InitializeComponent();
+
+            if (Skins.terka != null)
+            {
+                pictureBox1.Image = Skins.terka.Image;
+            }
 
             System.Drawing.Drawing2D.GraphicsPath gp = BuildTransparencyPath(pictureBox1);
             pictureBox1.Region = new Region(gp);
@@ -63,6 +69,16 @@ namespace WindowsFormsApplication4
             pictureBox2.Location = new Point(
                 pictureBox1.Location.X + pictureBox1.Size.Width - 200,
                 pictureBox2.Location.Y + (rnd.Next() % 7) - (rnd.Next() % 7));
+          
+            
+            if (Environment.TickCount - NachalTeret < 5000)
+            {
+                pictureBox2.Visible = true;
+            }
+            else
+            {
+                pictureBox2.Visible = false;
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -72,12 +88,18 @@ namespace WindowsFormsApplication4
 
         private void Terochka_Load(object sender, EventArgs e)
         {
-
+            NachalTeret = Environment.TickCount;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            NachalTeret = Environment.TickCount;
+        }
+
     }
 }

@@ -116,13 +116,37 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ytrk-mini.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\animeTer.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Baklajan.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\brocoli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kabachok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kapusta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Luk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ogurec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PerchikRED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PerchikYELLOW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\potatos.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Salocoin.png" />
@@ -132,6 +156,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TerTer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tikva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ytrk-mini.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
