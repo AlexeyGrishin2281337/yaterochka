@@ -28,7 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(426, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "салоcoin :";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Image = global::WindowsFormsApplication4.Properties.Resources.Salocoin;
+            this.pictureBox10.Location = new System.Drawing.Point(373, 2);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(46, 47);
+            this.pictureBox10.TabIndex = 11;
+            this.pictureBox10.TabStop = false;
             // 
             // My_Kabinet
             // 
@@ -37,13 +59,20 @@
             this.BackgroundImage = global::WindowsFormsApplication4.Properties.Resources.ytrk_mini;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(572, 342);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox10);
             this.Name = "My_Kabinet";
             this.Text = "My_Kabinet";
             this.Load += new System.EventHandler(this.My_Kabinet_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox10;
     }
 }

@@ -15,6 +15,9 @@ namespace WindowsFormsApplication4
         public My_Kabinet()
         {
             InitializeComponent();
+
+            System.Drawing.Drawing2D.GraphicsPath oz = Terochka.BuildTransparencyPath(pictureBox10);
+            pictureBox10.Region = new Region(oz);
         }
 
         private void My_Kabinet_Load(object sender, EventArgs e)

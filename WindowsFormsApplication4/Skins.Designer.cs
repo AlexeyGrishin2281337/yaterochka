@@ -75,11 +75,12 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::WindowsFormsApplication4.Properties.Resources.Salocoin;
-            this.pictureBox1.Location = new System.Drawing.Point(372, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(373, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(47, 46);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox4
             // 

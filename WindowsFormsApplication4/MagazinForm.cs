@@ -17,11 +17,16 @@ namespace WindowsFormsApplication4
         public MagazinForm()
         {
             InitializeComponent();
+
+            System.Drawing.Drawing2D.GraphicsPath oz = Terochka.BuildTransparencyPath(pictureBox10);
+            pictureBox10.Region = new Region(oz);
         }
 
         private void MagazinForm_Load(object sender, EventArgs e)
         {
             this.Controls.Clear();
+            this.Controls.Add(pictureBox10);
+            this.Controls.Add(label2);
             this.Controls.Add(productsPanel1);
             MagazinForm_Resize(null, null);
         }
@@ -32,6 +37,8 @@ namespace WindowsFormsApplication4
         private void page1_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
+            this.Controls.Add(pictureBox10);
+            this.Controls.Add(label2);
             this.Controls.Add(productsPanel1);
             MagazinForm_Resize(null, null);
         }
@@ -42,6 +49,8 @@ namespace WindowsFormsApplication4
         private void button1_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
+            this.Controls.Add(pictureBox10);
+            this.Controls.Add(label2);
             this.Controls.Add(productsPanel2);
             MagazinForm_Resize(null, null);
         }
@@ -49,12 +58,16 @@ namespace WindowsFormsApplication4
         private void button4_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
+            this.Controls.Add(pictureBox10);
+            this.Controls.Add(label2);
             this.Controls.Add(productsPanel3);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
+            this.Controls.Add(pictureBox10);
+            this.Controls.Add(label2);
             this.Controls.Add(productsPanel2);
         }
 
@@ -109,6 +122,21 @@ namespace WindowsFormsApplication4
             buttonNazad2.Location = new Point(
                 0,
                 productsPanel2.Height - buttonNazad2.Size.Height);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
