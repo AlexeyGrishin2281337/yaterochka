@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,27 @@ namespace WindowsFormsApplication4
         public MagazinForm()
         {
             InitializeComponent();
+            vse_tovary.Clear();
+            int x = 100;
+            DirectoryInfo dir = new DirectoryInfo(Path.GetDirectoryName(Application.ExecutablePath) +
+                "\\arhiv.zip");
+            foreach (FileInfo fl in dir.GetFiles())
+            {
+                if (fl.Extension == ".png")
+                {
+                    PictureBox pb = new PictureBox();
+                    pb.Location = new Point(x, 100);
+                    pb.Image = Image.FromFile(Path.GetDirectoryName(Application.ExecutablePath) +
+                "\\arhiv.zip\\" + fl.Name);
+                    pb.Size = new Size(100, 100);
+                    pb.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pb.Click += new System.EventHandler(pictureBox3_Click);
+                    productsPanel1.Controls.Add(pb);
+                    vse_tovary.Add(pb);
+
+                    x = x + 200;
+                }
+            }
 
             System.Drawing.Drawing2D.GraphicsPath oz = Terochka.BuildTransparencyPath(pictureBox10);
             pictureBox10.Region = new Region(oz);
@@ -43,10 +65,9 @@ namespace WindowsFormsApplication4
             this.Controls.Add(productsPanel1);
             MagazinForm_Resize(null, null);
 
-            vse_tovary.Add(pictureBox1);
-            vse_tovary.Add(pictureBox2);
-            vse_tovary.Add(pictureBox3);
-            vse_tovary.Add(pictureBox4);
+            //vse_tovary.Add(pictureBox2);
+            //vse_tovary.Add(pictureBox3);
+            //vse_tovary.Add(pictureBox4);
         }
 
         /// <summary>

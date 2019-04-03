@@ -144,6 +144,7 @@
             this.Controls.Add(this.saloLabel);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.pictureBox1);
+            this.MinimizeBox = false;
             this.Name = "Ya_Terochka";
             this.Text = "Ya_Terochka";
             this.Load += new System.EventHandler(this.Ya_Terochka_Load);
