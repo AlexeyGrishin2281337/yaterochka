@@ -48,7 +48,7 @@ namespace WindowsFormsApplication4
                     productsPanel1.Controls.Add(pb);
                     vse_tovary.Add(pb);
 
-                    x = x + 200;
+                    x = x + 100;
                 }
             }
 
