@@ -21,24 +21,28 @@ namespace WindowsFormsApplication4
         {
             MagazinForm mf = new MagazinForm();
             mf.ShowDialog();
+            saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
         }
 
         private void Тёрочка_Click(object sender, EventArgs e)
         {
             Terochka mv= new Terochka();
             mv.ShowDialog();
+            saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
         }
 
         private void Мой_кабинет_Click(object sender, EventArgs e)
         {
             My_Kabinet ms = new My_Kabinet();
             ms.ShowDialog();
+            saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
         }
 
         private void Скины_Click(object sender, EventArgs e)
         {
             Skins mk = new Skins();
             mk.ShowDialog();
+            saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -48,6 +52,7 @@ namespace WindowsFormsApplication4
 
         private void Ya_Terochka_Load(object sender, EventArgs e)
         {
+            saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
             System.Drawing.Drawing2D.GraphicsPath gp2 = Terochka.BuildTransparencyPath(pictureBox1);
             pictureBox1.Region = new Region(gp2);
         }

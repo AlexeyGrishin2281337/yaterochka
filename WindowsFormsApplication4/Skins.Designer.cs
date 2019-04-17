@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.saloLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // saloLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(426, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "салоcoin :";
+            this.saloLabel.AutoSize = true;
+            this.saloLabel.Location = new System.Drawing.Point(426, 18);
+            this.saloLabel.Name = "saloLabel";
+            this.saloLabel.Size = new System.Drawing.Size(57, 13);
+            this.saloLabel.TabIndex = 8;
+            this.saloLabel.Text = "салоcoin :";
             // 
             // pictureBox1
             // 
@@ -60,7 +60,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(572, 342);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.saloLabel);
             this.Name = "Skins";
             this.Text = "Skins";
             this.Load += new System.EventHandler(this.Skins_Load);
@@ -72,7 +72,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label saloLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

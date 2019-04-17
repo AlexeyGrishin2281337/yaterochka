@@ -41,6 +41,7 @@
             this.saloLabel.Size = new System.Drawing.Size(57, 13);
             this.saloLabel.TabIndex = 12;
             this.saloLabel.Text = "салоcoin :";
+            this.saloLabel.Click += new System.EventHandler(this.saloLabel_Click);
             // 
             // pictureBox10
             // 

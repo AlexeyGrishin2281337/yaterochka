@@ -77,7 +77,7 @@ namespace WindowsFormsApplication4
             bool tovarEst = false;
             foreach (PictureBox pb in MagazinForm.tovary)
             {
-                if (ovoshKotoryiTrut.Image == pb.BackgroundImage)
+                if (ovoshKotoryiTrut.Image == pb.Image)
                 {
                     tovarEst = true;
                 }
@@ -87,11 +87,12 @@ namespace WindowsFormsApplication4
             if (CurrentTime - ShowPasswordStart >= 3000 && 
                 ovoshKotoryiTrut.Visible == true && 
                 tovarEst == true)
+
             {
                 ovoshKotoryiTrut.Visible = false;
 
                 //Вернуть бабло
-                MagazinForm.money = MagazinForm.money + 90;
+                MagazinForm.money = MagazinForm.money + 200;
                 saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
 
                 //Удалить товар из купленных
@@ -129,10 +130,15 @@ namespace WindowsFormsApplication4
         private void pictureBoxClick(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
-            ovoshKotoryiTrut.Image = pb.BackgroundImage;
+            ovoshKotoryiTrut.Image = pb.Image;
             ovoshKotoryiTrut.Size = new Size(127, 127 * pb.Size.Height / pb.Size.Width);
             System.Drawing.Drawing2D.GraphicsPath gp2 = BuildTransparencyPath(ovoshKotoryiTrut);
-            ovoshKotoryiTrut.Region = new Region(gp2);    
+            ovoshKotoryiTrut.Region = new Region(gp2);
+
+            this.Controls.Remove(pb);
+            MagazinForm.tovary.Remove(pb);
+            ShowPasswordStart = Environment.TickCount;
+            ovoshKotoryiTrut.Visible = true;
         }
 
         /// <summary>
@@ -140,14 +146,16 @@ namespace WindowsFormsApplication4
         /// </summary>
         private void Terochka_Load(object sender, EventArgs e)
         {
+
+            saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
             ShowPasswordStart = Environment.TickCount;           
 
             int Y = 0;
             foreach (PictureBox pb in MagazinForm.tovary)
             {
-                pb.Location = new Point(pb.Location.X, Y);
+                pb.Location = new Point(pb.Location.X * 70 / 200 , Y);
                 
-                pb.Size = new Size(50, 50 * pb.Size.Height / pb.Size.Width);
+                pb.Size = new Size(70, 70 * pb.Size.Height / pb.Size.Width);
                 pb.Click += pictureBoxClick;
                 this.Controls.Add(pb);
             }

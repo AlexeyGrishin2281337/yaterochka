@@ -35,7 +35,6 @@
             this.saloLabel = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ovoshKotoryiTrut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -61,6 +60,7 @@
             this.ovoshKotoryiTrut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ovoshKotoryiTrut.TabIndex = 1;
             this.ovoshKotoryiTrut.TabStop = false;
+            this.ovoshKotoryiTrut.Visible = false;
             // 
             // saloLabel
             // 
@@ -87,16 +87,6 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(200, 275);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 55);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "НОВЫЙ OVOSH";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Terochka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,7 +94,6 @@
             this.BackgroundImage = global::WindowsFormsApplication4.Properties.Resources.ytrk_mini;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(572, 342);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.saloLabel);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.ovoshKotoryiTrut);
@@ -128,6 +117,5 @@
         private System.Windows.Forms.Label saloLabel;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button1;
     }
 }

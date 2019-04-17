@@ -31,7 +31,7 @@ namespace WindowsFormsApplication4
         {
             InitializeComponent();
             vse_tovary.Clear();
-            int x = 100;
+            int x = 0;
             DirectoryInfo dir = new DirectoryInfo(Path.GetDirectoryName(Application.ExecutablePath) +
                 "\\arhiv.zip");
             foreach (FileInfo fl in dir.GetFiles())
@@ -39,16 +39,33 @@ namespace WindowsFormsApplication4
                 if (fl.Extension == ".png")
                 {
                     PictureBox pb = new PictureBox();
-                    pb.Location = new Point(x, 100);
+                    pb.Location = new Point(x, 0);
                     pb.Image = Image.FromFile(Path.GetDirectoryName(Application.ExecutablePath) +
                 "\\arhiv.zip\\" + fl.Name);
-                    pb.Size = new Size(100, 100);
+                    pb.Size = new Size(150, 200);
                     pb.SizeMode = PictureBoxSizeMode.StretchImage;
                     pb.Click += new System.EventHandler(pictureBox3_Click);
-                    productsPanel1.Controls.Add(pb);
-                    vse_tovary.Add(pb);
 
-                    x = x + 100;
+                    vse_tovary.Add(pb);
+                    if (vse_tovary.Count <= 4)
+                    {
+                        productsPanel1.Controls.Add(pb);
+                    }
+                    else if (vse_tovary.Count <= 8)
+                    {
+                        productsPanel2.Controls.Add(pb);
+                    }
+                    else if (vse_tovary.Count <= 16)
+                    {
+                        productsPanel3.Controls.Add(pb);
+                    }
+                    
+                    x = x + 140;
+
+                    if (vse_tovary.Count % 4 == 0)
+                    {
+                        x = x - 560;
+                    }
                 }
             }
 
@@ -124,10 +141,10 @@ namespace WindowsFormsApplication4
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
-            if (tovary.Contains(pb) == false && MagazinForm.money > 80)
+            if (tovary.Contains(pb) == false && MagazinForm.money > 50)
             {
                 tovary.Add(pb);
-                MagazinForm.money = MagazinForm.money - 80;
+                MagazinForm.money = MagazinForm.money - 50;
                 saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
             }
         }
@@ -167,7 +184,13 @@ namespace WindowsFormsApplication4
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            PictureBox pb = (PictureBox)sender;
+            if (tovary.Contains(pb) == false && MagazinForm.money > 50)
+            {
+                tovary.Add(pb);
+                MagazinForm.money = MagazinForm.money - 50;
+                saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
+            }
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
@@ -178,6 +201,11 @@ namespace WindowsFormsApplication4
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -40,9 +40,9 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.productsPanel3 = new System.Windows.Forms.Panel();
             this.buttonNazad3 = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.saloLabel = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.productsPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -88,7 +88,6 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(1, 32);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -161,11 +160,12 @@
             // 
             // productsPanel3
             // 
+            this.productsPanel3.Controls.Add(this.button1);
             this.productsPanel3.Controls.Add(this.buttonNazad3);
             this.productsPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.productsPanel3.Location = new System.Drawing.Point(0, 3);
+            this.productsPanel3.Location = new System.Drawing.Point(0, 85);
             this.productsPanel3.Name = "productsPanel3";
-            this.productsPanel3.Size = new System.Drawing.Size(567, 281);
+            this.productsPanel3.Size = new System.Drawing.Size(567, 199);
             this.productsPanel3.TabIndex = 9;
             this.productsPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.productsPanel3_Paint);
             // 
@@ -178,15 +178,6 @@
             this.buttonNazad3.Text = "Назад";
             this.buttonNazad3.UseVisualStyleBackColor = true;
             this.buttonNazad3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(567, 284);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // saloLabel
             // 
@@ -208,6 +199,16 @@
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(480, 255);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Дальше";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // MagazinForm
             // 
@@ -252,8 +253,8 @@
         private System.Windows.Forms.Button buttonDalshe2;
         private System.Windows.Forms.Panel productsPanel3;
         private System.Windows.Forms.Button buttonNazad3;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label saloLabel;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Button button1;
     }
 }

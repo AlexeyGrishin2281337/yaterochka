@@ -22,6 +22,7 @@ namespace WindowsFormsApplication4
 
         private void Skins_Load(object sender, EventArgs e)
         {
+            saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
             InitializeComponent();
 
             int x = 100;
@@ -35,13 +36,13 @@ namespace WindowsFormsApplication4
                     pb.Location = new Point(x, 100);
                     pb.Image = Image.FromFile(Path.GetDirectoryName(Application.ExecutablePath) +
                 "\\Terochki\\" + fl.Name);
-                    pb.Size = new Size(100, 100);
+                    pb.Size = new Size(200, 200);
                     pb.SizeMode = PictureBoxSizeMode.StretchImage;
                     pb.Click += new System.EventHandler(pictureBox3_Click);
                     this.Controls.Add(pb);
                     System.Drawing.Drawing2D.GraphicsPath blueTerkaOblast = Terochka.BuildTransparencyPath(pb);
                     pb.Region = new Region(blueTerkaOblast);
-                    x = x + 200;
+                    x = x + 160;
                 }
             }
 
