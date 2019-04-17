@@ -141,10 +141,10 @@ namespace WindowsFormsApplication4
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
-            if (tovary.Contains(pb) == false && MagazinForm.money > 50)
+            if (tovary.Contains(pb) == false && MagazinForm.money > 80)
             {
                 tovary.Add(pb);
-                MagazinForm.money = MagazinForm.money - 50;
+                MagazinForm.money = MagazinForm.money - 80;
                 saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
             }
         }
@@ -185,10 +185,10 @@ namespace WindowsFormsApplication4
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
-            if (tovary.Contains(pb) == false && MagazinForm.money > 50)
+            if (tovary.Contains(pb) == false && MagazinForm.money > 80)
             {
                 tovary.Add(pb);
-                MagazinForm.money = MagazinForm.money - 50;
+                MagazinForm.money = MagazinForm.money - 80;
                 saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
             }
         }
