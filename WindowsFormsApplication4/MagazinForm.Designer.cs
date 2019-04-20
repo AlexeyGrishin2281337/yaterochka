@@ -42,7 +42,7 @@
             this.buttonNazad3 = new System.Windows.Forms.Button();
             this.saloLabel = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.productsPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -64,6 +64,7 @@
             // 
             // productsPanel1
             // 
+            this.productsPanel1.Controls.Add(this.label2);
             this.productsPanel1.Controls.Add(this.buttonDalshe1);
             this.productsPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.productsPanel1.Location = new System.Drawing.Point(3, -7);
@@ -160,12 +161,11 @@
             // 
             // productsPanel3
             // 
-            this.productsPanel3.Controls.Add(this.button1);
             this.productsPanel3.Controls.Add(this.buttonNazad3);
             this.productsPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.productsPanel3.Location = new System.Drawing.Point(0, 85);
+            this.productsPanel3.Location = new System.Drawing.Point(0, 3);
             this.productsPanel3.Name = "productsPanel3";
-            this.productsPanel3.Size = new System.Drawing.Size(567, 199);
+            this.productsPanel3.Size = new System.Drawing.Size(567, 281);
             this.productsPanel3.TabIndex = 9;
             this.productsPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.productsPanel3_Paint);
             // 
@@ -200,15 +200,16 @@
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
-            // button1
+            // label2
             // 
-            this.button1.Location = new System.Drawing.Point(480, 255);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Дальше";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.No;
+            this.label2.Location = new System.Drawing.Point(204, -1);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(141, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Все овощи: 80 салоcoin\'ов";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // MagazinForm
             // 
@@ -227,6 +228,7 @@
             this.Load += new System.EventHandler(this.MagazinForm_Load);
             this.Resize += new System.EventHandler(this.MagazinForm_Resize);
             this.productsPanel1.ResumeLayout(false);
+            this.productsPanel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -255,6 +257,6 @@
         private System.Windows.Forms.Button buttonNazad3;
         private System.Windows.Forms.Label saloLabel;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
     }
 }

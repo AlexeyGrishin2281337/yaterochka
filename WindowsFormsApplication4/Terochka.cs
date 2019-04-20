@@ -99,7 +99,7 @@ namespace WindowsFormsApplication4
                 //List<PictureBox> newTovary = MagazinForm.tovary
                 foreach (PictureBox pb in MagazinForm.tovary)
                 {
-                    if (ovoshKotoryiTrut.Image == pb.BackgroundImage)
+                    if (ovoshKotoryiTrut.Image == pb.Image)
                     {
                         MagazinForm.tovary.Remove(pb);
                         Terochka_Load(sender, e);
@@ -136,7 +136,8 @@ namespace WindowsFormsApplication4
             ovoshKotoryiTrut.Region = new Region(gp2);
 
             this.Controls.Remove(pb);
-            MagazinForm.tovary.Remove(pb);
+
+            //MagazinForm.tovary.Remove(pb);
             ShowPasswordStart = Environment.TickCount;
             ovoshKotoryiTrut.Visible = true;
         }
