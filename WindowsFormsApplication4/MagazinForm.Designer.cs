@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.productsPanel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.buttonDalshe1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -42,7 +43,6 @@
             this.buttonNazad3 = new System.Windows.Forms.Button();
             this.saloLabel = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.productsPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -72,6 +72,17 @@
             this.productsPanel1.Size = new System.Drawing.Size(561, 288);
             this.productsPanel1.TabIndex = 6;
             this.productsPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.productsPanel1_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.label2.Location = new System.Drawing.Point(197, 262);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(141, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Все овощи: 80 салоcoin\'ов";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // buttonDalshe1
             // 
@@ -199,17 +210,6 @@
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.No;
-            this.label2.Location = new System.Drawing.Point(204, -1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Все овощи: 80 салоcoin\'ов";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // MagazinForm
             // 

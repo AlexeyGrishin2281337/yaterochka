@@ -58,7 +58,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApplication4.Properties.Resources.ytrk_mini;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(572, 342);
+            this.ClientSize = new System.Drawing.Size(811, 342);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.saloLabel);
             this.Name = "Skins";

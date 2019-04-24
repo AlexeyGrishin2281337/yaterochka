@@ -12,6 +12,7 @@ namespace WindowsFormsApplication4
 {
     public partial class Terochka : Form
     {
+        
         private int ShowPasswordStart = 0;
         Random rnd = new Random();
 
@@ -73,6 +74,15 @@ namespace WindowsFormsApplication4
         private void timer1_Tick(object sender, EventArgs e)
         {
             int CurrentTime = Environment.TickCount;
+            /*saloLabel.Text = ((10000 + ShowPasswordStart - CurrentTime)/1000).ToString();
+            if (CurrentTime - ShowPasswordStart > 10000)
+            {
+
+                Close();
+            }*/
+
+
+
 
             bool tovarEst = false;
             foreach (PictureBox pb in MagazinForm.tovary)
@@ -92,7 +102,7 @@ namespace WindowsFormsApplication4
                 ovoshKotoryiTrut.Visible = false;
 
                 //Вернуть бабло
-                MagazinForm.money = MagazinForm.money + 90;
+                MagazinForm.money = MagazinForm.money + 100;
                 saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
 
                 //Удалить товар из купленных
@@ -138,7 +148,7 @@ namespace WindowsFormsApplication4
             this.Controls.Remove(pb);
 
             //MagazinForm.tovary.Remove(pb);
-            ShowPasswordStart = Environment.TickCount;
+            //ShowPasswordStart = Environment.TickCount;
             ovoshKotoryiTrut.Visible = true;
         }
 
@@ -147,14 +157,14 @@ namespace WindowsFormsApplication4
         /// </summary>
         private void Terochka_Load(object sender, EventArgs e)
         {
-
+            
             saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
             ShowPasswordStart = Environment.TickCount;           
 
             int Y = 0;
             foreach (PictureBox pb in MagazinForm.tovary)
             {
-                pb.Location = new Point(pb.Location.X * 70 / 200 , Y);
+                pb.Location = new Point(pb.Location.X * 70 / 200 , 250);
                 
                 pb.Size = new Size(70, 70 * pb.Size.Height / pb.Size.Width);
                 pb.Click += pictureBoxClick;

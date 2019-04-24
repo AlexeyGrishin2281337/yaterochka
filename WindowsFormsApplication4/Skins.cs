@@ -25,7 +25,7 @@ namespace WindowsFormsApplication4
             saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
             InitializeComponent();
 
-            int x = 100;
+            int x = 0;
             DirectoryInfo dir = new DirectoryInfo(Path.GetDirectoryName(Application.ExecutablePath) +
                 "\\Terochki");
             foreach (FileInfo fl in dir.GetFiles())
@@ -42,7 +42,7 @@ namespace WindowsFormsApplication4
                     this.Controls.Add(pb);
                     System.Drawing.Drawing2D.GraphicsPath blueTerkaOblast = Terochka.BuildTransparencyPath(pb);
                     pb.Region = new Region(blueTerkaOblast);
-                    x = x + 160;
+                    x = x + 200;
                 }
             }
 
