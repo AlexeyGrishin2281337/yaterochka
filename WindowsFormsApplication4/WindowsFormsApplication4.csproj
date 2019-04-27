@@ -77,6 +77,12 @@
     <Compile Include="Terochka.Designer.cs">
       <DependentUpon>Terochka.cs</DependentUpon>
     </Compile>
+    <Compile Include="ykea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ykea.Designer.cs">
+      <DependentUpon>ykea.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Terochka.resx">
       <DependentUpon>Terochka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ykea.resx">
+      <DependentUpon>ykea.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -165,6 +174,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ytrk-mini.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DKIMJK8dLVM.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

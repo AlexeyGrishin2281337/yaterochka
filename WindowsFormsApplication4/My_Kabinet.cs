@@ -22,9 +22,13 @@ namespace WindowsFormsApplication4
 
         private void My_Kabinet_Load(object sender, EventArgs e)
         {
+            Controls.Clear();
+            Controls.Add(saloLabel);
+            Controls.Add(button1);
+            Controls.Add(pictureBox10);
             saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
             int x = 0;
-            foreach (PictureBox pb in MagazinForm.tovary)
+            foreach (PictureBox pb in ykea6t.vse_mebel)
             {
                 pb.Location = new Point(x, 50);
                 Controls.Add(pb);
