@@ -141,7 +141,7 @@ namespace WindowsFormsApplication4
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
-            if (tovary.Contains(pb) == false && MagazinForm.money > 80)
+            if (tovary.Contains(pb) == false && MagazinForm.money >= 80)
             {
                 tovary.Add(pb);
                 MagazinForm.money = MagazinForm.money - 80;

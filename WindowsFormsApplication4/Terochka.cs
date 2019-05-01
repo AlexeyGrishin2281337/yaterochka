@@ -102,7 +102,7 @@ namespace WindowsFormsApplication4
                 ovoshKotoryiTrut.Visible = false;
 
                 //Вернуть бабло
-                MagazinForm.money = MagazinForm.money + 100;
+                MagazinForm.money = MagazinForm.money + 110;
                 saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
 
                 //Удалить товар из купленных

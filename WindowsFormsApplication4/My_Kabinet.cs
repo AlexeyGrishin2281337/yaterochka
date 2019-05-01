@@ -28,7 +28,7 @@ namespace WindowsFormsApplication4
             Controls.Add(pictureBox10);
             saloLabel.Text = "салоcoin : " + MagazinForm.money.ToString();
             int x = 0;
-            foreach (PictureBox pb in ykea6t.vse_mebel)
+            foreach (PictureBox pb in ykea.kypi_mebel)
             {
                 pb.Location = new Point(x, 50);
                 Controls.Add(pb);
@@ -39,6 +39,13 @@ namespace WindowsFormsApplication4
         private void saloLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ykea ym = new ykea();
+            ym.ShowDialog();
+            My_Kabinet_Load(sender, e);
         }
     }
 }
