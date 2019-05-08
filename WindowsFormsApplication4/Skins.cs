@@ -60,7 +60,7 @@ namespace WindowsFormsApplication4
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Скин изменен", "Сообщение"); //Сообщение о изменении скин
             terka = (PictureBox)sender;
             
         }
